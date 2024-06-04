@@ -20,9 +20,11 @@
   </div>
 
   <div class="checkbox-wrapper">
-    <input type="checkbox" name="showClosed" formControlName="showClosed">
-    <label for="showClosed">Exibir unidades fechadas</label>
-    <span>Resultados encontrados {{results.length}} </span>
+    <div class="checkbox">
+      <input type="checkbox" name="showClosed" formControlName="showClosed">
+      <label for="showClosed">Exibir unidades fechadas</label>
+    </div>
+    <span>Resultados encontrados {{filteredResults.length}} </span>
   </div>
   <div class="btn-wrapper">
     <button class="btn btn-primary" (click)="onSubmit()">Encontrar Unidade</button>
